@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pendaftaran siswa baru</title>
+    <title>Pendaftaran Calon Pegawai Baru</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo.png">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
@@ -79,7 +79,7 @@
         <div class="container">
             <a class="navbar-brand" href="https://smkn1bantul.sch.id">
                 <img src="../../assets/img/logo.png" width="30" height="30" alt="logosmk">
-                <span class="align-middle">SMK 1 BANTUL</span>
+                <span class="align-middle">Kementrian Kelautan dan Perikanan</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,10 +91,10 @@
                         <a class="nav-link" href="?beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?monitoring">monitoring</a>
+                        <a class="nav-link" href="?monitoring">Monitoring</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?pengaturan">pengaturan</a>
+                        <a class="nav-link" href="?pengaturan">Pengaturan</a>
                     </li>
                 </ul>
             </div>
@@ -153,8 +153,8 @@
                     <h4>NAVIGATE</h4>
                     <ul class="list-unstyled">
                         <li><a href="?beranda" class="text-light">Beranda</a></li>
-                        <li><a href="?monitoring" class="text-light">monitoring</a></li>
-                        <li><a href="?pengaturan" class="text-light">pengaturan</a></li>
+                        <li><a href="?monitoring" class="text-light">Monitoring</a></li>
+                        <li><a href="?pengaturan" class="text-light">Pengaturan</a></li>
                     </ul>
                 </div>
             </div>

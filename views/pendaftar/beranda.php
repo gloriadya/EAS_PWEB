@@ -2,7 +2,7 @@
         <div class="jumbotron">
             <div class="container text-center">
                 <h1 class="display-3">SELAMAT DATANG!</h1>
-                <h4>sekolah berkualitas, berkarakter, dan berwawasan lingkungan.</h4>
+                <h4>Pendaftaran Ujian Pegawai Baru Kementrian Kelautan dan Perikanan di wilayah Provinsi Jawa Timur</h4>
                 <p><a class="btn btn-primary btn-lg mt-3 rounded-pill" href="?pendaftaran" role="button">DAFTAR</a></p>
             </div>
         </div>

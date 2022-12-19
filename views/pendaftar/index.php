@@ -19,7 +19,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pendaftaran siswa baru</title>
+    <title>Pendaftaran Calon Pegawai Baru</title>
     <link rel="icon" type="image/png" href="../../assets/img/logo.png">
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
@@ -99,7 +99,7 @@
                         <a class="nav-link" href="?pendaftaran">Pendaftaran</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="?daftarsiswa">pemeringkatan</a>
+                        <a class="nav-link" href="?daftarsiswa">Pengumuman</a>
                     </li>
                 </ul>
             </div>
@@ -180,7 +180,7 @@
                     <ul class="list-unstyled">
                         <li><a href="?beranda" class="text-light">Beranda</a></li>
                         <li><a href="?pendaftaran" class="text-light">Pendaftaran</a></li>
-                        <li><a href="?daftarsiswa" class="text-light">Pemeringkatan</a></li>
+                        <li><a href="?daftarsiswa" class="text-light">Pengumuman</a></li>
                     </ul>
                 </div>
             </div>
