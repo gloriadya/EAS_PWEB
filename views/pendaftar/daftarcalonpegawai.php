@@ -19,7 +19,7 @@
                 </tr>
                 <?php
                     $i=0;
-                    $query = mysqli_query($connect, "SELECT * FROM pendaftar p JOIN berkas b ON b.id_berkas=p.id_berkas JOIN nilai_un n ON n.id_nilai=p.id_nilai ORDER BY n.jumlah DESC");
+                    $query = mysqli_query($connect, "SELECT * FROM pendaftar p JOIN berkas b ON b.id_berkas=p.id_berkas");
                     foreach($query as $data) :
                     $i++;
                 ?>
@@ -31,7 +31,6 @@
                     <td><?= $data['tgl_lhr'] ?></td>
                     <td><?= ($data['kelamin'] == 'L') ? 'Laki-laki' : 'Perempuan' ; ?></td>
                     <td><?= $data['alamat'] ?></td>
-                    <td><?= $data['jumlah'] ?></td>
                     <td><?= $data['formasi_jabatan'] ?></td>
                 </tr>
                     <?php endforeach; ?>

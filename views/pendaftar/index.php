@@ -140,7 +140,7 @@
             } elseif ($data['status'] == '0') {
                 include "menunggu.php";
             } elseif ($data['status'] == '1') {
-                include "daftarsiswa.php";
+                include "daftarcalonpegawai.php";
             } else {
                 include "blacklist.php";
             }

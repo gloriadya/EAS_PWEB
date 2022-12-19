@@ -2,8 +2,6 @@
     session_start();
     include "connect.php";
 
-    $no_pendf = date('ymdhms');
-
     //menangkap data biodata
     $nama = $_POST['nama'];
     $id = $_SESSION['id'];
@@ -15,7 +13,8 @@
     $agama = $_POST['agama'];
     $pendidikan = $_POST['pendidikan'];
     $jabatan = $_POST['jabatan'];
-    
+    $no_pendf = (int) substr($nik, 3, 3);
+
     //menangkap data berkas
     $nama_foto = $_FILES['foto']['name'];
 	$tmp_foto = $_FILES['foto']['tmp_name'];
