@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap.css">
     <link rel="stylesheet" href="../../assets/css/all.css">
     <style>
+        /* .logo{
+            height: 421px;
+            width: 592px;
+        } */
+
         .jumbotron {
             background: white;
         }
@@ -78,7 +83,7 @@
     <!-- START NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 shadow" style="width:100%">
         <div class="container">
-            <a class="navbar-brand">
+            <a class="navbar-brand" href="https://smkn1bantul.sch.id">
                 <img src="../../assets/img/logo.png" width="30" height="30" alt="logosmk">
                 <span class="align-middle">Kementrian Kelautan dan Perikanan</span>
             </a>
@@ -149,6 +154,40 @@
         ?>
     </main>
     <!-- END CONTENT -->
+
+    <!-- START FOOTER -->
+    <footer class="bg-dark">
+        <div class="container text-light">
+            <div class="row p-4">
+                <div class="col text-center">
+                    <h4>CONTACT</h4>
+                    <div>
+                        <p class="m-2"><i class="fa fa-envelope mr-2"></i>smeanbtl@yahoo.com</p>
+                        <p class="m-2"><i class="fa fa-phone mr-2"></i>0274-367156 / 0274-6462740</p>
+                        <p class="m-2"><i class="fa fa-fax mr-2"></i>0232123456</p>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/smkn1bantul/" class="text-light mx-1"><i
+                                class="fab fa-instagram fa-2x"></i></a>
+                        <a href="https://facebook.com" class="text-light mx-1"><i class="fab fa-facebook fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <h4>ADDRESS</h4>
+                    <p>Jl.Parangtritis KM 11<br>Sabdodadi<br>Bantul<br>Yogyakarta</p>
+                </div>
+                <div class="col text-center">
+                    <h4>NAVIGATE</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="?beranda" class="text-light">Beranda</a></li>
+                        <li><a href="?pendaftaran" class="text-light">Pendaftaran</a></li>
+                        <li><a href="?daftarsiswa" class="text-light">Pengumuman</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
 
     <script src="../../assets/js/jquery.js"></script>
     <script src="../../assets/js/bootstrap.js"></script>

@@ -1,26 +1,9 @@
-# pendaftaran-siswa
-  website pendaftaran siswa baru untuk smk 1 bantul
-  dibuat dengan HTML, CSS, JavaScript dan mysql
+Kelas: Pemrograman Web C 2022/2023
 
-  Demo :
-  
-       1. admin
-        - email     : admin@gmail.com
-        - password  : admin
-        
-       2. pendaftar
-        - email     : ap975527@gmail.com
-        - passsword : akbar
-        
-  admin :
-  
-    - admin bisa mengatur jangka waktu pendaftaran dimenu pengaturan
-    - admin juga bisa verifikasi apakah pendaftar diterima atau tidak pada menu monitoring
-    
-  pendaftar :
-    
-    - pendaftar harus membuat akun terlebih dahulu supaya bisa mendaftar
-    - pendaftar mengisi form pendaftaran pada menu pendaftaran 
-    - pendaftar melihat peringkat dimenu pemeringkatan setelah dinyatakan diterima
-    - jika pendaftar ditolak, pendaftar tidak bisa mendaftar lagi dan bisa mendaftar lagi untuk tahun depan
-    
+Anggota Kelompok:
+
+Tegar Ganang Satrio Priambodo - 5025201002
+
+Adifa Widyadhani Chanda D'layla - 5025201013
+
+Gloria Dyah Pramesti - 5025201033

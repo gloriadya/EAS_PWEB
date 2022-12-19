@@ -1,8 +1,8 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <div class="container text-center">
+            <div style="color: white;" class="container text-center">
                 <h1 class="display-3">SELAMAT DATANG!</h1>
-                <h4>sekolah berkualitas, berkarakter, dan berwawasan lingkungan.</h4>
+                <h4>Pendaftaran Ujian Pegawai Baru Kementrian Kelautan dan Perikanan di wilayah Provinsi Jawa Timur</h4>
             </div>
         </div>
 
@@ -18,16 +18,15 @@
             <!-- Example row of columns -->
             <div class="text-center">
                 <h2>Visi</h2>
-                <h4>Terwujudnya sekolah berkualitas, berkarakter, dan berwawasan lingkungan.</h4>
+                <h4>Kementerian Kelautan dan Perikanan Republik Indonesia Mendukung Terwujudnya Visi - Misi Presiden dan Wakil Presiden, Yaitu: Terwujudnya Masyarakat Kelautan dan Perikanan yang Sejahtera dan Sumber Daya Kelautan dan Perikanan yang Berkelanjutan untuk “Mewujudkan Indonesia Maju yang Berdaulat, Mandiri  dan, Berkepribadian, berlandaskan Gotong Royong”.</h4>
             </div>
             <div class="text-center mt-5">
                 <h2>Misi</h2>
-                <h5>Menyiapkan sarana prasarana  dan SDM yang memenuhi standar SNP
-                    Melaksanakan pembelajaran yang berbasis sains dan teknologi.
-                    Mengimplementasikan iman, taqwa, mandiri, jujur, disiplin dan tanggung jawab dalam kehidupan sehari-hari
-                    Melaksanakan pembelajaran berbasis lingkungan serta mengaplikasikannya dalam kehidupan sehari-hari
-                    Menyiapkan tamatan yang mampu mengisi dan menciptakan lapangan kerja serta mengembangkan profesionalitas dibidang bisnis.
-                    Mengimplementasikan pendidikan etika berlalu lintas dalam kehidupan sehari-hari.</h5>
+                <h5>Misi Kementerian Kelautan dan Perikanan Republik Indonesia Sesuai Visi-Misi Presiden dan Wakil Presiden yaitu:
+                    Peningkatan Kualitas Manusia, melalui peningkatan Daya Saing SDM KP  dan Pengembangan Inovasi dan Riset Kelautan dan Perikanan.
+                    Struktur Ekonomi yang Produktif, Mandiri, dan Berdaya Saing, melalui peningkatan Kontribusi Ekonomi Sektor Kelautan dan Perikanan terhadap Perekonomian Nasional.
+                    Mencapai Lingkungan Hidup yang Berkelanjutan, melaluli Peningkatan Kelestarian Sumber Daya Kelautan dan Perikanan.
+                    Pengelolaan Pemerintahan yang Bersih, Efektif, dan Terpercaya, melalui Penigkatan Tata Kelola Pemerintahan di KKP.</h5>
             </div>
 
         </div> <!-- /container -->
@@ -35,12 +34,13 @@
         <hr>
 
         <div class="container p-3">
-            <h2 class="text-center">Program keahlian</h2>
+            <h2 class="text-center">Formasi Jabatan yang Dibuka</h2><br>
             <div class="row">
                 <div class="col text-right">
-                    <h5>Akuntansi dan Keuangan Lembaga</h5>
-                    <h5>Perbankan Syariah</h5>
-                    <h5>Otomatisasi dan Manajemen Perkantoran</h5>
+                    <h5>Programmer</h5>
+                    <h5>Pegawai Perikanan</h5>
+                    <h5>Analis Pasar Hasil Perikanan Ahli Utama</h5>
+                    <h5>Pelaksana/Terampil - Penyuluh Perikanan</h5>
                 </div>
                 <div class="col-1 text-center">
                     <h5>o</h5>
@@ -49,43 +49,17 @@
                     <h5>o</h5>
                 </div>
                 <div class="col">
-                    <h5>Bisnis Daring dan Pemasaran</h5>
-                    <h5>Teknik Komputer dan Jaringan</h5>
-                    <h5>Multimedia</h5>
-                    <h5>Rekayasa Perangkat Lunak</h5>
+                    <h5>Pengawas Perikanan</h5>
+                    <h5>Kelasi</h5>
+                    <h5>Nahkoda</h5>
+                    <h5>Pengelola Teknis Perikanan Budidaya</h5>
                 </div>
             </div>
         </div>
 
         <hr>
 
-        <div class="container p-3">
-            <div class="row">
-                <div class="col-8">
-                    <h4>Galeri SMEA</h4>
-                    <img src="../../assets/img/1.jpg" alt="" width="200">
-                    <img src="../../assets/img/2.jpg" alt="" width="200">
-                    <img src="../../assets/img/3.jpg" alt="" width="200">
-                </div>
-                <div class="col-4">
-                    <div class="card shadow m-2">
-                        <div class="card-body">
-                            <h6>Pemilos SMK 1 Bantul periode 2017/2018</h6>
-                        </div>
-                    </div>
-                    <div class="card shadow m-2">
-                        <div class="card-body">
-                            <h6>Sapu pintar pembersih sampah</h6>
-                        </div>
-                    </div>
-                    <div class="card shadow m-2">
-                        <div class="card-body">
-                            <h6>Pelaksanaan uji kompetensi keahllian tahun ajaran 2017/2018</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 <?php
         include "../../controller/connect.php";
