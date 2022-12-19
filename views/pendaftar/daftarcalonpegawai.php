@@ -5,7 +5,7 @@
     <!-- START CONTENT -->
     <main role="main" class="m-5">
         <div class="container overflow-auto">
-            <h4>DAFTAR CALON SISWA</h4>
+            <h4>DAFTAR CALON PEGAWAI</h4>
             <table class="table mt-4">
                 <tr>
                     <td>No</td>
@@ -15,7 +15,7 @@
                     <td>Tanggal lahir</td>
                     <td>Jenis kelamin</td>
                     <td>Alamat</td>
-                    <td>Nilai</td>
+                    <td>Formasi Jabatan</td>
                 </tr>
                 <?php
                     $i=0;
@@ -32,6 +32,7 @@
                     <td><?= ($data['kelamin'] == 'L') ? 'Laki-laki' : 'Perempuan' ; ?></td>
                     <td><?= $data['alamat'] ?></td>
                     <td><?= $data['jumlah'] ?></td>
+                    <td><?= $data['formasi_jabatan'] ?></td>
                 </tr>
                     <?php endforeach; ?>
             </table>
