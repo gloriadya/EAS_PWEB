@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Jul 2019 pada 17.32
--- Versi server: 10.3.16-MariaDB
--- Versi PHP: 7.1.30
+-- Generation Time: Dec 19, 2022 at 05:52 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,72 +18,71 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dts_sertifikasi`
+-- Database: `eas_pweb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `berkas`
+-- Table structure for table `berkas`
 --
 
 CREATE TABLE `berkas` (
   `id_berkas` int(11) NOT NULL,
   `foto` varchar(255) NOT NULL,
-  `kk` varchar(255) NOT NULL,
-  `akta_lahir` varchar(255) NOT NULL,
-  `ijazah` varchar(255) NOT NULL,
-  `nilai_rapor` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `ktp` varchar(255) NOT NULL,
+  `vaksin` varchar(255) NOT NULL,
+  `ijazah` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `berkas`
+-- Dumping data for table `berkas`
 --
 
-INSERT INTO `berkas` (`id_berkas`, `foto`, `kk`, `akta_lahir`, `ijazah`, `nilai_rapor`) VALUES
-(8, 'Akbar Putra.jpg', 'cv.pdf', 'ktp.pdf', 'ijazah.pdf', 89);
+INSERT INTO `berkas` (`id_berkas`, `foto`, `ktp`, `vaksin`, `ijazah`) VALUES
+(8, 'Akbar Putra.jpg', 'ktp.pdf', 'vaksin.pdf', 'ijazah.pdf');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `blacklist`
+-- Table structure for table `blacklist`
 --
 
 CREATE TABLE `blacklist` (
   `id_user` int(11) NOT NULL,
   `nama` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `countdown`
+-- Table structure for table `countdown`
 --
 
 CREATE TABLE `countdown` (
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `countdown`
+-- Dumping data for table `countdown`
 --
 
 INSERT INTO `countdown` (`tanggal`) VALUES
-('2019-07-30');
+('2022-12-30');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `level`
+-- Table structure for table `level`
 --
 
 CREATE TABLE `level` (
   `id_level` int(11) NOT NULL,
   `nama_level` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `level`
+-- Dumping data for table `level`
 --
 
 INSERT INTO `level` (`id_level`, `nama_level`) VALUES
@@ -94,29 +92,7 @@ INSERT INTO `level` (`id_level`, `nama_level`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `nilai_un`
---
-
-CREATE TABLE `nilai_un` (
-  `id_nilai` int(11) NOT NULL,
-  `indo` int(5) NOT NULL,
-  `mtk` int(5) NOT NULL,
-  `inggris` int(5) NOT NULL,
-  `ipa` int(5) NOT NULL,
-  `jumlah` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `nilai_un`
---
-
-INSERT INTO `nilai_un` (`id_nilai`, `indo`, `mtk`, `inggris`, `ipa`, `jumlah`) VALUES
-(8, 88, 88, 89, 87, 352);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `pendaftar`
+-- Table structure for table `pendaftar`
 --
 
 CREATE TABLE `pendaftar` (
@@ -124,25 +100,27 @@ CREATE TABLE `pendaftar` (
   `id` int(11) NOT NULL,
   `nama` varchar(25) NOT NULL,
   `kelamin` enum('L','P') NOT NULL,
+  `tempat_lhr` varchar(50) NOT NULL,
   `tgl_lhr` date NOT NULL,
   `agama` varchar(10) NOT NULL,
   `alamat` text NOT NULL,
+  `pendidikan` varchar(50) NOT NULL,
+  `formasi_jabatan` varchar(50) NOT NULL,
   `id_berkas` int(11) NOT NULL,
-  `id_nilai` int(11) NOT NULL,
   `status` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `pendaftar`
+-- Dumping data for table `pendaftar`
 --
 
-INSERT INTO `pendaftar` (`no_pendf`, `id`, `nama`, `kelamin`, `tgl_lhr`, `agama`, `alamat`, `id_berkas`, `id_nilai`, `status`) VALUES
-(2147483647, 2, 'Akbar putra pangestu', 'L', '2001-01-25', 'islam', 'jl. imogiri-siluk,rt. 03 mojohuro, sriharjo, imogiri', 8, 8, 0);
+INSERT INTO `pendaftar` (`no_pendf`, `id`, `nama`, `kelamin`, `tempat_lhr`, `tgl_lhr`, `agama`, `alamat`, `pendidikan`, `formasi_jabatan`, `id_berkas`, `status`) VALUES
+(2147483647, 2, 'Akbar putra pangestu', 'L', 'Tarakan', '2001-01-25', 'islam', 'jl. imogiri-siluk,rt. 03 mojohuro, sriharjo, imogiri', 'S-1', 'Programmer', 8, 0);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -151,10 +129,10 @@ CREATE TABLE `user` (
   `email` varchar(30) NOT NULL,
   `password` varchar(255) NOT NULL,
   `id_level` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `nama`, `email`, `password`, `id_level`) VALUES
@@ -166,79 +144,65 @@ INSERT INTO `user` (`id`, `nama`, `email`, `password`, `id_level`) VALUES
 --
 
 --
--- Indeks untuk tabel `berkas`
+-- Indexes for table `berkas`
 --
 ALTER TABLE `berkas`
   ADD PRIMARY KEY (`id_berkas`);
 
 --
--- Indeks untuk tabel `level`
+-- Indexes for table `level`
 --
 ALTER TABLE `level`
   ADD PRIMARY KEY (`id_level`);
 
 --
--- Indeks untuk tabel `nilai_un`
---
-ALTER TABLE `nilai_un`
-  ADD PRIMARY KEY (`id_nilai`);
-
---
--- Indeks untuk tabel `pendaftar`
+-- Indexes for table `pendaftar`
 --
 ALTER TABLE `pendaftar`
   ADD PRIMARY KEY (`no_pendf`),
-  ADD KEY `id_berkas` (`id_berkas`),
-  ADD KEY `id_nilai` (`id_nilai`);
+  ADD KEY `id_berkas` (`id_berkas`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_level` (`id_level`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `berkas`
+-- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
   MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `level`
+-- AUTO_INCREMENT for table `level`
 --
 ALTER TABLE `level`
   MODIFY `id_level` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `nilai_un`
---
-ALTER TABLE `nilai_un`
-  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `pendaftar`
+-- Constraints for table `pendaftar`
 --
 ALTER TABLE `pendaftar`
-  ADD CONSTRAINT `pendaftar_ibfk_1` FOREIGN KEY (`id_nilai`) REFERENCES `nilai_un` (`id_nilai`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `pendaftar_ibfk_2` FOREIGN KEY (`id_berkas`) REFERENCES `berkas` (`id_berkas`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `pendaftar_ibfk_1` FOREIGN KEY (`id_berkas`) REFERENCES `berkas` (`id_berkas`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `user`
+-- Constraints for table `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_level`) REFERENCES `level` (`id_level`) ON DELETE CASCADE ON UPDATE CASCADE;
