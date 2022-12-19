@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2022 at 08:07 PM
+-- Generation Time: Dec 19, 2022 at 09:33 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -50,7 +50,10 @@ INSERT INTO `berkas` (`id_berkas`, `foto`, `ktp`, `vaksin`, `ijazah`) VALUES
 (15, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
 (16, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
 (17, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
-(18, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf');
+(18, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(19, 'Vector.png', '8830-15933-1-PB.pdf', '4914-19883-3-PB.pdf', '4914-19883-3-PB.pdf'),
+(20, 'Vector.png', '8830-15933-1-PB.pdf', '4914-19883-3-PB.pdf', '4914-19883-3-PB.pdf'),
+(22, 'WhatsApp Image 2022-12-15 at 10.16.16.jpeg', '4914-19883-3-PB.pdf', '4914-19883-3-PB.pdf', '4914-19883-3-PB.pdf');
 
 -- --------------------------------------------------------
 
@@ -62,6 +65,13 @@ CREATE TABLE `blacklist` (
   `id_user` int(11) NOT NULL,
   `nama` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `blacklist`
+--
+
+INSERT INTO `blacklist` (`id_user`, `nama`) VALUES
+(3, 'girrr');
 
 -- --------------------------------------------------------
 
@@ -126,6 +136,7 @@ CREATE TABLE `pendaftar` (
 --
 
 INSERT INTO `pendaftar` (`no_pendf`, `id`, `nik`, `nama`, `kelamin`, `tempat_lhr`, `tgl_lhr`, `agama`, `alamat`, `pendidikan`, `formasi_jabatan`, `id_berkas`, `status`) VALUES
+(367, 3, '1253671828391289', 'girr', 'L', 'Tarakan', '2012-12-12', 'islam', 'e', 'S-1', 'Nahkoda', 22, 0),
 (2147483647, 2, '1253671828391283', 'Tegar', 'L', 'Tarakan', '2002-10-12', 'islam', 'bschabiucbabsc', 'S-1', 'Pengawas Perikanan', 18, 1);
 
 -- --------------------------------------------------------
@@ -148,7 +159,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `nama`, `email`, `password`, `id_level`) VALUES
 (1, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1),
-(2, 'Akbar putra pangestu', 'ap975527@gmail.com', '4f033a0a2bf2fe0b68800a3079545cd1', 2);
+(2, 'Tegar', 'ap975527@gmail.com', '4f033a0a2bf2fe0b68800a3079545cd1', 2),
+(3, 'nama', 'tegar@gmail.com', '1d31802d64bae29d88923d795fc73734', 2),
+(4, 'gloo', 'glo@gmail.com', '1d31802d64bae29d88923d795fc73734', 2);
 
 --
 -- Indexes for dumped tables
@@ -188,7 +201,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
-  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `level`
@@ -200,7 +213,7 @@ ALTER TABLE `level`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
