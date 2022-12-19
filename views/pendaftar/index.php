@@ -84,7 +84,7 @@
         <div class="container">
             <a class="navbar-brand" href="https://smkn1bantul.sch.id">
                 <img src="../../assets/img/logo.png" width="30" height="30" alt="logosmk">
-                <span class="align-middle">SMK 1 BANTUL</span>
+                <span class="align-middle">Kementrian Kelautan dan Perikanan</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
