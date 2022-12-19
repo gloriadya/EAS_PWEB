@@ -1,5 +1,5 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
+<div class="jumbotron">
             <div style="color: white;" class="container text-center">
                 <h1 class="display-3">SELAMAT DATANG!</h1>
                 <h4>Pendaftaran Ujian Pegawai Baru Kementrian Kelautan dan Perikanan di wilayah Provinsi Jawa Timur</h4>
