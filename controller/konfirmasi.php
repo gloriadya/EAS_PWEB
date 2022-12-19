@@ -6,7 +6,7 @@
         
         $no_pendf = $_GET['no_pendf'];
 
-        $query = mysqli_query($connect, "UPDATE pendaftar SET id=id, nama=nama, kelamin=kelamin, tgl_lhr=tgl_lhr, agama=agama, alamat=alamat, id_berkas=id_berkas, id_nilai=id_nilai, status='1'");
+        $query = mysqli_query($connect, "UPDATE pendaftar SET id=id, nama=nama, kelamin=kelamin, tgl_lhr=tgl_lhr, agama=agama, alamat=alamat, id_berkas=id_berkas,  status='1'");
         
         if ($query) {
             echo "<script>alert('Berhasil!'); document.location.href = '../views/admin/?monitoring';</script>";
@@ -29,9 +29,8 @@
         
         $querypendaftar = mysqli_query($connect, "DELETE FROM pendaftar WHERE no_pendf='$no_pendf'");
         $queryberkas = mysqli_query($connect, "DELETE FROM berkas WHERE id_berkas='$idberkas'");
-        $querynilai = mysqli_query($connect, "DELETE FROM nilai_un WHERE id_nilai='$idnilai'");
         
-        if ($query AND $queryblacklist AND $queryberkas AND $querynilai AND $querypendaftar) {
+        if ($query AND $queryblacklist AND $queryberkas AND $querypendaftar) {
             echo "<script>alert('Berhasil!'); document.location.href = '../views/admin/?monitoring';</script>";
         } else {
             echo "<script>alert('Gagal!'); document.location.href = '../views/admin/?monitoring';</script>";

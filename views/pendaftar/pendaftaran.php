@@ -11,6 +11,18 @@
                             <label for="nama">Nama</label>
                             <input type="text" class="form-control" id="nama" name="nama" placeholder="masukkan nama" required>
                         </div>
+                        <div class="form-group">
+                            <label for="nik">NIK</label>
+                            <input type="text" class="form-control" id="nik" name="nik" placeholder="masukkan nik" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tmptlahir">Tempat Lahir</label>
+                            <input type="text" class="form-control" id="tmptlahir" name="tmptlahir" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tgllahir">Tanggal lahir</label>
+                            <input type="date" class="form-control" id="tgllahir" name="tgllahir" required>
+                        </div>
                         <label class="d-block m-0">Jenis kelamin</label>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="radio" name="kelamin" id="lakilaki" value="L" required>
@@ -18,10 +30,10 @@
                             <input class="form-check-input ml-2" type="radio" name="kelamin" id="perempuan" value="P" required>
                             <label class="form-check-label ml-4" for="perempuan">Perempuan</label>
                         </div>
-                        <div class="form-group">
-                            <label for="tgllahir">Tanggal lahir</label>
-                            <input type="date" class="form-control" id="tgllahir" name="tgllahir" required>
-                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <h5><br></h5>
                         <div class="form-group">
                             <label for="alamat">Alamat</label>
                             <textarea class="form-control" id="alamat" name="alamat" placeholder="masukkan alamat" required></textarea>
@@ -36,30 +48,25 @@
                                 <option value="budha">budha</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col">
-                        <h5>NILAI</h5>
                         <div class="form-group">
-                            <label for="nilai">nilai rata-rata(rapor per-semester)</label>
-                            <input type="number" class="form-control" id="nilai" name="nilai" placeholder="masukkan nilai" required>
-                        </div>
-                        <hr>
-                        <div class="form-group">
-                            <label for="indo">Bahasa indonesia</label>
-                            <input type="number" class="form-control" id="indo" name="indo" placeholder="masukkan nilai" required>
+                            <label for="pendidikan">Pendidikan Terakhir</label>
+                            <input type="text" class="form-control" id="pendidikan" name="pendidikan" placeholder="masukkan pendidikan" required>
                         </div>
                         <div class="form-group">
-                            <label for="mtk">Matematika</label>
-                            <input type="number" class="form-control" id="mtk" name="mtk" placeholder="masukkan nilai" required>
+                            <label for="jabatan">Formasi Jabatan</label>
+                            <select name="jabatan" id="jabatan" class="form-control" required>
+                                <option value="Programmer">Programmer</option>
+                                <option value="Pegawai Perikanan">Pegawai Perikanan</option>
+                                <option value="Analis Pasar Hasil Perikanan Ahli Utama">Analis Pasar Hasil Perikanan Ahli Utama</option>
+                                <option value="Pengawas Perikanan">Pengawas Perikanan</option>
+                                <option value="Kelasi">Kelasi</option>
+                                <option value="Nahkoda">Nahkoda</option>
+                                <option value="Pengelola Teknis Perikanan Budidaya">Pengelola Teknis Perikanan Budidaya</option>
+                                <option value="Pelaksana/Terampil - Penyuluh Perikanan">Pelaksana/Terampil - Penyuluh Perikanan</option>
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <label for="inggris">Bahasa inggris</label>
-                            <input type="number" class="form-control" id="inggris" name="inggris" placeholder="masukkan nilai" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="ipa">IPA</label>
-                            <input type="number" class="form-control" id="ipa" name="ipa" placeholder="masukkan nilai" required>
-                        </div>
+                        
+                        
                     </div>
                 </div>
                 <hr>
@@ -71,14 +78,14 @@
                             <input type="file" name="foto" id="foto" required>
                         </div>
                         <div class="form-group">
-                            <label for="kk">Kartu keluarga(PDF)</label>
-                            <input type="file" name="kk" id="kk" required>
+                            <label for="ktp">KTP(PDF)</label>
+                            <input type="file" name="ktp" id="ktp" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="akta">akta kelahiran(PDF)</label>
-                            <input type="file" name="akta" id="akta" required>
+                            <label for="vaksin">vaksin(PDF)</label>
+                            <input type="file" name="vaksin" id="vaksin" required>
                         </div>
                         <div class="form-group">
                             <label for="ijazah">Ijazah(PDF)</label>
