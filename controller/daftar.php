@@ -30,7 +30,7 @@
     $idberkas = mysqli_insert_id($connect);
     $querypendaftar = mysqli_query($connect, "INSERT INTO pendaftar VALUES('$no_pendf','$id', '$nik','$nama', '$kelamin', '$tmptlahir', '$tgllhr', '$agama', '$alamat', '$pendidikan', '$jabatan', '$idberkas',  '0')");
 
-    if ($queryberkas AND $querynilai AND $querypendaftar) {
+    if ($queryberkas AND $querypendaftar) {
         move_uploaded_file($tmp_foto, '../berkas/'.$nama_foto);
         move_uploaded_file($tmp_ktp, '../berkas/'.$nama_ktp);
         move_uploaded_file($tmp_vaksin, '../berkas/'.$nama_vaksin);
