@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2022 at 05:52 PM
+-- Generation Time: Dec 19, 2022 at 08:07 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -40,7 +40,17 @@ CREATE TABLE `berkas` (
 --
 
 INSERT INTO `berkas` (`id_berkas`, `foto`, `ktp`, `vaksin`, `ijazah`) VALUES
-(8, 'Akbar Putra.jpg', 'ktp.pdf', 'vaksin.pdf', 'ijazah.pdf');
+(8, 'Akbar Putra.jpg', 'ktp.pdf', 'vaksin.pdf', 'ijazah.pdf'),
+(9, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(10, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(11, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(12, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(13, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(14, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(15, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(16, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(17, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf'),
+(18, 'Manajemen Biaya EAS MPPL - Anggaran Biaya_001.jpg', 'Manajemen Biaya EAS MPPL - Anggaran Biaya.pdf', '8830-15933-1-PB.pdf', '8830-15933-1-PB.pdf');
 
 -- --------------------------------------------------------
 
@@ -98,6 +108,7 @@ INSERT INTO `level` (`id_level`, `nama_level`) VALUES
 CREATE TABLE `pendaftar` (
   `no_pendf` int(11) NOT NULL,
   `id` int(11) NOT NULL,
+  `nik` varchar(16) NOT NULL,
   `nama` varchar(25) NOT NULL,
   `kelamin` enum('L','P') NOT NULL,
   `tempat_lhr` varchar(50) NOT NULL,
@@ -114,8 +125,8 @@ CREATE TABLE `pendaftar` (
 -- Dumping data for table `pendaftar`
 --
 
-INSERT INTO `pendaftar` (`no_pendf`, `id`, `nama`, `kelamin`, `tempat_lhr`, `tgl_lhr`, `agama`, `alamat`, `pendidikan`, `formasi_jabatan`, `id_berkas`, `status`) VALUES
-(2147483647, 2, 'Akbar putra pangestu', 'L', 'Tarakan', '2001-01-25', 'islam', 'jl. imogiri-siluk,rt. 03 mojohuro, sriharjo, imogiri', 'S-1', 'Programmer', 8, 0);
+INSERT INTO `pendaftar` (`no_pendf`, `id`, `nik`, `nama`, `kelamin`, `tempat_lhr`, `tgl_lhr`, `agama`, `alamat`, `pendidikan`, `formasi_jabatan`, `id_berkas`, `status`) VALUES
+(2147483647, 2, '1253671828391283', 'Tegar', 'L', 'Tarakan', '2002-10-12', 'islam', 'bschabiucbabsc', 'S-1', 'Pengawas Perikanan', 18, 1);
 
 -- --------------------------------------------------------
 
@@ -177,7 +188,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `berkas`
 --
 ALTER TABLE `berkas`
-  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_berkas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `level`
